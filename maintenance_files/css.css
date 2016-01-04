@@ -1,0 +1,18 @@
+@font-face {
+  font-family: 'Khula';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Khula Light'), local('Khula-Light'), url(https://fonts.gstatic.com/s/khula/v1/-xx0uPo3wDx608yKBDdcBfesZW2xOQ-xsNqO47m55DA.woff2) format('woff2');
+}
+@font-face {
+  font-family: 'Khula';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Khula'), local('Khula-Regular'), url(https://fonts.gstatic.com/s/khula/v1/SYvd5I-BTu9JPZJQxkiU_w.woff2) format('woff2');
+}
+@font-face {
+  font-family: 'Khula';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Khula Bold'), local('Khula-Bold'), url(https://fonts.gstatic.com/s/khula/v1/X7lqfHGcWpWlhqJUbgWL3PesZW2xOQ-xsNqO47m55DA.woff2) format('woff2');
+}
