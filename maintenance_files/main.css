@@ -546,6 +546,8 @@ h5.title {
 .mainpage-col-kos {
     padding-top: 30px;
     background: #fff;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
 }
 
 .mainpage-col-kos .wrapper {
