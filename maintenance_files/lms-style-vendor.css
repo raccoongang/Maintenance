@@ -1887,23 +1887,3 @@
 .carousel-slide-reverse .carousel-active {
   left: 0;
 }
-
-.error_align{
-    text-align: center;
-}
-
-.content-wrapper {
-    width: 100%;
-    margin: 0 auto;
-    background: #D8D9D9 url("background-repeat_retina.png")!important;
-    background-size: 393px 396px !important;
-    padding-bottom: 50px!important;
-}
-
-.raccoon_error{
-    width: 100%;
-    height: auto;
-    background-position: center top;
-}
-
-

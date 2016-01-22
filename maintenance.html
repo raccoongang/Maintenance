@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<!--[if lte IE 9]><html class="ie ie9 lte9" lang="ru"><![endif]-->
+<!--[if lte IE 9]><html class="ie ie9 lte9" lang="en"><![endif]-->
 <!--[if !IE]><!-->
-<html lang="ru"><!--<![endif]--><head dir="ltr">
+<html lang="en"><!--<![endif]--><head dir="ltr">
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,11 +15,11 @@
 
   
       <title>
-       Maintenance | Raccoongang
+       Maintenance | Socratic Brain
       </title>
   
 
-      <script src="maintenance_files/analytics.js" async=""></script><script type="text/javascript">
+      <script type="text/javascript">
         /* immediately break out of an iframe if coming from the marketing website */
         (function(window) {
           if (window.location !== window.top.location) {
@@ -30,7 +30,7 @@
 
   <script type="text/javascript" src="maintenance_files/i18n.js"></script>
 
-  <link rel="icon" type="image/x-icon" href="http://edx.raccoongang.com/static/themes/default/images/favicon.ef5a2610fc2b.ico">
+  <link rel="icon" type="image/x-icon" href="http://stagecourse.socraticbrain.org/static/themes/default/images/favicon.d9c664fae52c.ico">
 
   
   
@@ -79,17 +79,6 @@
     
 
 
-<script type="text/javascript">
- (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
- (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
- m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
- })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
- ga('create', 'UA-69016755-1', 'auto');
- ga('send', 'pageview');
-</script>
-
-
   
   <!-- dummy Segment -->
 <script type="text/javascript">
@@ -109,14 +98,13 @@
   <script></script>
 
 
-<script src="maintenance_files/moment.js" data-requiremodule="moment" data-requirecontext="_" async="" charset="utf-8" type="text/javascript"></script></head>
+<script src="maintenance_files/discovery_factory.js" data-requiremodule="/static/js/discovery/discovery_factory.014f08e71019.js?raw" data-requirecontext="_" async="" charset="utf-8" type="text/javascript"></script><script src="maintenance_files/moment.js" data-requiremodule="moment" data-requirecontext="_" async="" charset="utf-8" type="text/javascript"></script></head>
 
-<body class="ltr  lang_ru">
+<body class="ltr  lang_en">
 
 
 <div id="page-prompt"></div>
   <div class="window-wrap" dir="ltr">
-    <!--<a class="nav-skip" href="#content">Skip to main content</a>-->
 
         
 
@@ -131,15 +119,12 @@
   <header id="global-navigation" class="global ">
     <nav class="nav-wrapper" aria-label="Global">
     <h1 class="logo">
-      <a href="http://edx.raccoongang.com/">
+      <a href="http://stagecourse.socraticbrain.org/">
         
-  <img src="maintenance_files/logo_header.png" alt="Home Page" height="76">
+  <img src="maintenance_files/OpenEdXLogo.png" alt="Home Page" height="50">
 
       </a>
     </h1>
-
-
-
   </nav>
 </header>
 
@@ -154,14 +139,59 @@
       
 
 
-<section class="outside-app">
-  <h1>Down for maintenance. </h1>
-  <h3 class="error_align">We appologize for the inconvenience. Technical works are being conducted on the server at the moment.</h3>
-  <h3 class="error_align">This site will be available soon.</h3>
-<img src="maintenance_files/raccoons__.png" alt="" class="raccoon_error">
+
+
+
+
+
+
+
+
+  <script type="text/template" id="facet_option-tpl">
+      <li>
+    <button data-facet="<%= facet %>" data-value="<%= term %>" data-text="<%= name %>" class="facet-option discovery-button <%= selected ? 'selected' : '' %>">
+        <%= name %>
+        <span class="count">
+            <span class="count-number"><%= count %></span>
+        </span>
+    </button>
+</li>
+
+  </script>
+
+    <script type="text/javascript">
+        (function (require) {
+                require(['/static/js/discovery/discovery_factory.014f08e71019.js?raw'], function () {
+                    require(['js/discovery/discovery_factory'], function (DiscoveryFactory) {
+
+    DiscoveryFactory(
+      {},
+      getParameterByName('search_query')
+    );
+
+                    });
+                });
+        }).call(this, require || RequireJS.require);
+    </script>
+
+
+
+
+
+<section class="find-courses">
+  <section class="courses-container">
+    <h1>Down for maintenance</h1>
+    <h3>We appologize for the inconvenience. Technical works are being conducted on the server at the moment.</h3>
+    <h3>This site will be available soon.</h3>
+    <img src="maintenance_files/maintenance_image.png" alt="" style="width:36%; margin:20px 0 0;">
+
+  </section>
+    </aside>
+
+  </section>
 </section>
 
-      
+
     </div>
 
         
@@ -171,25 +201,59 @@
 
 
 
-
-<div class="wrapper-footer">
-  <footer>
+<div class="wrapper wrapper-footer">
+  <footer id="footer-openedx">
     <div class="colophon">
-      <nav class="nav-colophon">
+      <nav class="nav-colophon" aria-label="About">
         <ol>
+            <li class="nav-colophon-01">
+              <a id="about" href="http://www.socraticbrain.org/about" target="_blank">About</a>
+            </li>
+            <li class="nav-colophon-02">
+              <a id="blog" href="https://socraticbrain.wordpress.com/" target="_blank">Blog</a>
+            </li>
+            <li class="nav-colophon-03">
+              <a id="faq" href="http://www.socraticbrain.org/help/faq" target="_blank">FAQs</a>
+            </li>
+            <li class="nav-colophon-04">
+              <a id="contact" href="http://www.socraticbrain.org/contact" target="_blank">Contact</a>
+            </li>
+            <li class="nav-colophon-05">
+              <a id="donate" href="http://www.socraticbrain.org/donate" target="_blank">Donate</a>
+            </li>
         </ol>
       </nav>
+
+      <div class="wrapper-logo">
+        <p>
+          <a href="http://stagecourse.socraticbrain.org/">
+            <img alt="Socratic Brain" src="maintenance_files/OpenEdXLogo.png" height="50">
+          </a>
+        </p>
+      </div>
+
+      <p class="copyright">© Socratic Brain.  All rights reserved except
+ where noted.  EdX, Open edX and the edX and Open EdX logos are 
+registered trademarks or trademarks of edX Inc.</p>
+
+      <nav class="nav-legal" aria-label="Legal">
+        <ul>
+            <li class="nav-legal-01">
+              <a href="http://www.socraticbrain.org/security" target="_blank">Privacy Policy</a>
+            </li>
+            <li class="nav-legal-02">
+              <a href="http://www.socraticbrain.org/terms" target="_blank">Terms of Service</a>
+            </li>
+        </ul>
+      </nav>
     </div>
-    <div class="references">
-      <a href="http://raccoongang.com/" target="_blank">
-        <span class="raccoongang">
-    	  <img src="maintenance_files/OpenEdXLogo.png"> Raccoon Gang
-        </span>
-      </a>
-      <span>Built on
-				<a href="http://code.edx.org/">
-          <img src="maintenance_files/open_edx.png" alt="OpenEdx" style="margin-top: -9px;" height="30" width="146">
-				</a></span>
+
+    <div class="footer-about-openedx">
+      <p>
+        <a href="http://open.edx.org/">
+          <img src="maintenance_files/edx-openedx-logo-tag.png" alt="Powered by Open edX" width="140">
+        </a>
+      </p>
     </div>
   </footer>
 </div>
