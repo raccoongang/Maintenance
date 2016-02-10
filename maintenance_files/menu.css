@@ -6,13 +6,13 @@
 .navbar-fixed-top {
     min-height: 115px;
     max-height: 152px;
-    max-width: 1184px;
+    max-width: 1170px;
     border-image-width:0px;
     border-bottom: 0px;
 }
 
 .navbar-fixed-top {
-    box-shadow: 0px 8px 8px -10px #292929;
+    box-shadow: 0px 8px 8px -10px #ffffff;
     left: 50%;
     top: 0;
     width: 100%;
@@ -33,7 +33,7 @@
     padding-top: 0px;
     padding-bottom: 0px;
     line-height: 116px;
-    font-size: 21px;
+    font-size: 18px;
     font-weight: 300;
     display: block;
     position: relative;
@@ -107,15 +107,20 @@ nav {
 
 /* mobile version */
 
-@media (max-width: 1090px) {
+@media (max-width: 1110px) {
+
+    .nav > li > a {
+        padding: 10px 10px !important;
+    }
+    
     nav .navbar-nav>li>a {
-        font-size: 19px;
+        font-size: 17px;
     }
 }
 
 @media (max-width: 1040px) {
     nav .navbar-nav>li>a {
-        font-size: 17px;
+        font-size: 16px;
     }
 }
 
@@ -137,7 +142,7 @@ nav {
 
     .navbar-nav > li li div {
         padding: 0 0;
-        font-size: 14px;
+        font-size: 13px;
     }
 
     li > a {
@@ -192,7 +197,7 @@ nav {
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 480px)  {
     .navbar-toggle {
         margin: 12px 15px;
     }
@@ -203,6 +208,7 @@ nav {
 
     .navbar-fixed-top {
         min-height: 0;
+        max-height: 84px;
     }
 
     .navbar-collapse {
@@ -219,12 +225,34 @@ nav {
 
     .navbar-nav {
         margin: 0;
-        width: 100%;
     }
 
 }
 
+@media screen and (max-height: 400px) {
+     .navbar-default .navbar-nav > li > a {
+        padding: 5px;
+        line-height: 20px;
+    }
 
+    .navbar-toggle {
+        margin: 12px 15px;
+        padding: 10px;
+    }
+
+    .navbar-brand, .navbar-fixed-top, .navbar-header {
+        height: 58px;
+    }
+
+    .navbar-fixed-top {
+        min-height: 0;
+    }
+
+    .navbar-nav {
+        margin: 0;
+    }
+
+}
 .navbar-nav > li > a div:first-child {
     transition: transform 0.3s ease;
     transform: none;
@@ -268,4 +296,21 @@ nav {
 .navbar-nav>li>.dropdown-menu {
     margin-top: 5px;
     border-radius: 3px;
+}
+
+.active > a {
+    background-color: #6bbb38 !important;
+    background-image: linear-gradient(to bottom, #6bbb38 0, #6bbb38 100%) !important;
+}
+
+
+.nav_wrapper{
+   background-image: -webkit-linear-gradient(top, #fff 0, #f8f8f8 100%);
+   box-shadow: 0px 8px 8px -10px #292929 ;
+   min-height: 58px;
+   height: 116px;
+   width: 1920px;
+   position: fixed;
+    top: 0px;
+    z-index: 1;
 }

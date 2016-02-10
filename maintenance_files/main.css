@@ -4,7 +4,7 @@ html {
 }
 
 body {
-    padding: 0 0 196px;
+    padding: 0 0 166px;
     margin: 0;
     font: 16px 'Khula',sans-serif;
     overflow-x: hidden;
@@ -21,7 +21,7 @@ footer {
 }
 
 .main-content-block {
-  padding: 40px 15px 50px;
+  padding: 40px 15px -1px;
 }
 
 .breadcrumb {
@@ -59,7 +59,7 @@ footer {
    color: #72BB25 ;
    text-transform: uppercase;
    background: none;
-   margin-top:30px;
+   margin-top: 12px;
    height: 60px;
    border: 2px solid #72BB25 ;
    width: 250px;
@@ -79,9 +79,9 @@ footer {
 }
 
 .wrapper {
-    padding: 60px 500px;
-    margin-left: -500px;
-    margin-right: -500px;
+    padding: 30px;
+    margin-left: -30px;
+    margin-right: -30px;
     text-align: center;
     color: #fff;
     background: #252536 url(../img/textures_2.jpg) 50% 0 repeat;
@@ -137,8 +137,7 @@ footer {
 
 .box-clients{
     padding: 60px 0 40px;
-    margin-left: 10px;
-    margin-right: 10px;
+
     background: #fff;
 }
 
@@ -228,6 +227,7 @@ h5.title {
 }
 .sadffss .wrapper {
     margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 .btn-g{
@@ -306,7 +306,16 @@ h5.title {
     opacity: 0.5;
 }
 
-@media (max-width: 999px) and (min-width: 481px) {
+@media screen and (max-width: 999px) and (min-width: 481px) {
+
+    .wrapper {
+    margin-left: 0px;
+    margin-right: 0px;}
+
+    .top-div-padding{
+        height:106px;
+    }
+
     .carousel-caption {
         top: 0;
     }
@@ -327,6 +336,7 @@ h5.title {
     .mainpage-col-kos{
         margin-right: 10px;
         margin-left: 10px;
+        margin-bottom: 20px;
     }
 
     .ic1, .ic2, .ic3, .ic4, .ic5, .ic6 {
@@ -354,10 +364,29 @@ h5.title {
     opacity: 0.85;
 }
 
-@media (max-width: 480px) {
-#raccoon-carousel {margin-top: 58px;}
+.top-div-padding{
+    height:156px;
+}
+
+@media screen and (max-width: 480px){
+
+    .breadcrumb {
+        display: none !important;
+    }
+
+    .wrapper {
+    margin-left: 0px;
+    margin-right: 0px;}
+
+    #raccoon-carousel {margin-top: 58px;}
+
+
     .message-send {
         top:150px;
+    }
+
+    .top-div-padding{
+        height:58px;
     }
 
     .carousel-caption {
@@ -383,21 +412,25 @@ h5.title {
         margin-bottom: -15px;
     }
 
-.navbar-fixed-top {
-    max-height: 94px;
-}
+    .navbar-fixed-top {
+        max-height: 94px;
+    }
 
-.navbar-nav > li > a {
-    padding-top: 0px;
-    padding-bottom: 0px;
-    line-height: 68px;
-}
+    .nav_wrapper{
+        max-height: 58px;
+    }
 
-.navbar-brand > img {
-    width: 155px;
-    height: 58px;
+    .navbar-nav > li > a {
+        padding-top: 0px;
+        padding-bottom: 0px;
+        line-height: 68px;
+    }
 
-}
+    .navbar-brand > img {
+        width: 155px;
+        height: 58px;
+
+    }
     .clients-list a {
         display: block;
     }
@@ -424,6 +457,85 @@ h5.title {
     }
 }
 
+@media screen and (max-height: 400px) {
+
+    .wrapper {
+    margin-left: 0px;
+    margin-right: 0px;}
+
+    #raccoon-carousel {margin-top: 58px;}
+
+    .message-send {
+        top:150px;
+    }
+
+    .top-div-padding{
+        height:106px;
+    }
+
+    .carousel-caption {
+        top: 0;
+    }
+
+    .carousel-caption h1{
+        font-size: 30px;
+        padding-bottom: 30px;
+    }
+
+    .carousel-caption h3{
+        font-size: 16px;
+        padding-bottom: 30px;
+    }
+
+    .btn-g {
+        font-size: 12px;
+        line-height: 26px;
+        margin-top:5px;
+        height: 30px;
+        width: 120px;
+        margin-bottom: -15px;
+    }
+
+    .navbar-fixed-top {
+        max-height: 94px;
+    }
+
+    .navbar-nav > li > a {
+        padding-top: 0px;
+        padding-bottom: 0px;
+        line-height: 68px;
+    }
+
+    .navbar-brand > img {
+        width: 155px;
+        height: 58px;
+
+    }
+    .clients-list a {
+        display: block;
+    }
+
+    .carousel-inner > div > img{
+        min-height: 250px;
+        min-width: 600px;
+    }
+
+    .carousel-inner h3 {
+        display: none;
+    }
+    h1,h2,h2.title {
+        font-size: 30px;
+        font-weight: 300;
+    }
+    h3 {
+        font-size: 20px;
+        font-weight: 300;
+    }
+    h5.title {
+        font-weight: 300;
+        font-size: 20px;
+    }
+}
 
 
 .main-text {
@@ -545,12 +657,12 @@ h5.title {
 
 .mainpage-col-kos {
     padding-top: 30px;
-    margin-top: 5vh;
-    margin-bottom: 5vh;
+    margin-bottom: 30px;
 }
 
 .mainpage-col-kos .wrapper {
     margin-top: 40px;
+    padding-bottom: 40px;
 }
 
 .col-kos p{
@@ -576,6 +688,7 @@ h5.title {
 .background{
     width: 100%;
     background: #f5f4f4;
+    margin-bottom: 30px;
 
 }
 
@@ -645,4 +758,67 @@ header > h1 > a{
 .messageDialog .modal-body{
     font-size: large;
     margin: 0 auto;
+}
+
+.grayscale{
+   -webkit-filter: grayscale(100%);
+      -moz-filter: grayscale(100%);
+       -ms-filter: grayscale(100%);
+        -o-filter: grayscale(100%);
+           filter: grayscale(100%);
+           opacity: 0.7;
+       -webkit-transition: 0.3s;
+      -moz-transition: 0.3s;
+       -ms-transition: 0.3s;
+        -o-transition: 0.3s;
+           transition: 0.3s;
+}
+
+.grayscale:hover{
+            opacity: 1;
+    -webkit-filter: grayscale(0%);
+       -moz-filter: grayscale(0%);
+        -ms-filter: grayscale(0%);
+         -o-filter: grayscale(0%);
+            filter: grayscale(0%);
+}
+
+
+.wrap_img{
+   margin: -30px -30px 0 -30px;
+}
+
+.about_image {
+   width: 100%;
+}
+
+.background_img{
+   position: relative;
+}
+
+.about_img img{
+   width: 100%;
+   height: auto;
+}
+
+.container_background{
+   max-width: 1170px;
+   min-width: 300px;
+   text-align: center;
+}
+
+.img_text_wrapp{
+   width: 100%;
+   color: #fff;
+   font-size: 25px;
+   text-transform: uppercase;
+}
+
+.img_text{
+   position: absolute;
+   top: 50%;
+   left: 1%;
+   right: 1%;
+   margin-top: -0.625em;
+
 }
